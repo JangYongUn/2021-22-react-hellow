@@ -7,7 +7,7 @@ class App extends React.Component {
 	}
 	commitChange = value => {
 		this.setState({
-			query: value
+			query: value,
 			resultProducts: this.state.products.filter(v => v.title.includes(value))
 		})
 	}
